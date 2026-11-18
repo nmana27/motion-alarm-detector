@@ -1,0 +1,411 @@
+(PCB CADENCE_SCH
+ (description
+  (timeStamp "2026 10 01 10 00 24")
+  (program "CAPTURE.EXE" (Version "17.2-2016 - D"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "Motion Detector Circuit")
+  (date "Wednesday, January 21, 2026")
+  (document "Proiect 9")
+  (revision "9")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component LED
+   (place D1
+    (property 
+     (timestamp 00000153)
+     ("Source Package" LED)
+     (Value LED)
+     ("PCB Footprint" CAP196))))
+  (component R
+   (place R1
+    (property 
+     (timestamp 00000072)
+     ("Source Package" R)
+     (Value 1k)
+     ("PCB Footprint" RES400)))
+   (place R2
+    (property 
+     (timestamp 00000082)
+     ("Source Package" R)
+     (Value 1k)
+     ("PCB Footprint" RES400)))
+   (place R3
+    (property 
+     (timestamp 00000092)
+     ("Source Package" R)
+     (Value 470)
+     ("PCB Footprint" RES400)))
+   (place R4
+    (property 
+     (timestamp 000000A2)
+     ("Source Package" R)
+     (Value 100k)
+     ("PCB Footprint" RES400))))
+  (component CON2
+   (place J1
+    (property 
+     (timestamp 000001E0)
+     ("Source Package" CON2)
+     (Value CON2)
+     ("PCB Footprint" JUMPER2))))
+  (component "CAP NP"
+   (place C1
+    (property 
+     (timestamp 000000BB)
+     ("Source Package" "CAP NP")
+     (Value 10n)
+     ("PCB Footprint" CAPCK05))))
+  (component TIL120_0
+   (place U2
+    (property 
+     (timestamp 00000195)
+     ("Source Package" TIL120_0)
+     (Value "IR SENSOR")
+     ("PCB Footprint" JUMPER4))))
+  (component SPEAKER
+   (place LS1
+    (property 
+     (timestamp 00000059)
+     ("Source Package" SPEAKER)
+     (Value BUZZER)
+     ("PCB Footprint" buzzer))))
+  (component NE555_0
+   (place U1
+    (property 
+     (timestamp 0000003C)
+     ("Source Package" NE555_0)
+     (Value NE555)
+     ("PCB Footprint" DIP8_3))))
+  (component "CAP POL"
+   (place C2
+    (property 
+     (timestamp 000000D4)
+     ("Source Package" "CAP POL")
+     (Value "100u / 16V")
+     ("PCB Footprint" CAPCK05)))))
+ (library
+  (image SPEAKER
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB"))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00539)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image NE555_0
+   (property 
+    (sourcelib C:\\USERS\\JOEY\\DOCUMENTS\\WORK\\PCADE_MOTION_DETECTOR\\CADENCE_SCH.DSN))
+   (pin 999 3
+    (property 
+     (pinname OUT)
+     (pintype 2)
+     (Name OUT)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Output)
+     ("Net Name" N00539)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname RST)
+     (pintype 0)
+     (Name RST)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" 12V)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 8
+    (property 
+     (pinname VCC)
+     (pintype 7)
+     (Name VCC)
+     (Number 8)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" 12V)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 1
+    (property 
+     (pinname GND)
+     (pintype 7)
+     (Name GND)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" GND)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname CV)
+     (pintype 0)
+     (Name CV)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" N00572)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname TRG)
+     (pintype 0)
+     (Name TRG)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" N00633)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname THR)
+     (pintype 0)
+     (Name THR)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" N00756)
+     (Order 6)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname DSCHG)
+     (pintype 4)
+     (Name DSCHG)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00756)
+     (Order 7)
+     ("Is No Connect" False))))
+  (image TIL120_0
+   (property 
+    (sourcelib C:\\USERS\\JOEY\\DOCUMENTS\\WORK\\PCADE_MOTION_DETECTOR\\CADENCE_SCH.DSN))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)
+     (Name 3)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00633)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname 4)
+     (pintype 4)
+     (Name 4)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00637)
+     (Order 3)
+     ("Is No Connect" False))))
+  (image R
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB"))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 12V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00637)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image "CAP NP"
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB"))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00572)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image "CAP POL"
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB"))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00756)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image CON2
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB"))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 12V)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image LED
+   (property 
+    (sourcelib "C:\\PROGRAM FILES (X86)\\ORCAD\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB"))
+   (pin 999 1
+    (property 
+     (pinname ANODE)
+     (pintype 4)
+     (Name ANODE)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00568)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname CATHODE)
+     (pintype 4)
+     (Name CATHODE)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False)))))
+ (network
+  (net 12V
+    (property 
+     (nettype S))
+   (pins
+     U1-4 U1-8 R1-1 R2-1 R4-1 J1-1))
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     U1-1 LS1-2 C1-2 C2-2 D1-2 U2-2 U2-3 J1-2))
+  (net N00539
+   (pins
+     U1-3 LS1-1 R3-1))
+  (net N00568
+   (pins
+     R3-2 D1-1))
+  (net N00572
+   (pins
+     U1-5 C1-1))
+  (net N00633
+   (pins
+     U1-2 R2-2 U2-1))
+  (net N00637
+   (pins
+     R1-2 U2-4))
+  (net N00756
+   (pins
+     U1-6 U1-7 R4-2 C2-1)))
+)

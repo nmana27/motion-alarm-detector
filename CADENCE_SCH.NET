@@ -1,0 +1,73 @@
+Wire List
+
+Motion Detector Circuit                       Revised: Wednesday, January 21, 2026
+Proiect 9                                     Revision: 9
+
+
+
+
+
+
+<<< Component List >>>
+10n                           C1        CAPCK05
+100u / 16V                    C2        CAPCK05
+LED                           D1        CAP196
+CON2                          J1        JUMPER2
+BUZZER                        LS1       buzzer
+1k                            R1        RES400
+1k                            R2        RES400
+470                           R3        RES400
+100k                          R4        RES400
+NE555                         U1        DIP8_3
+IR SENSOR                     U2        JUMPER4
+
+<<< Wire List >>>
+
+  NODE  REFERENCE    PIN #   PIN NAME           PIN TYPE       PART VALUE
+
+[00001] 12V
+        U1              4       RST             Input          NE555
+        U1              8       VCC             Power          NE555
+        R1              1       1               Passive        1k
+        R2              1       1               Passive        1k
+        R4              1       1               Passive        100k
+        J1              1       1               Passive        CON2
+
+[00002] GND
+        U1              1       GND             Power          NE555
+        LS1             2       2               Passive        BUZZER
+        C1              2       2               Passive        10n
+        C2              2       2               Passive        100u / 16V
+        D1              2       CATHODE         Passive        LED
+        U2              2       2               Passive        IR SENSOR
+        U2              3       3               Passive        IR SENSOR
+        J1              2       2               Passive        CON2
+
+[00003] N00539
+        U1              3       OUT             Output         NE555
+        LS1             1       1               Passive        BUZZER
+        R3              1       1               Passive        470
+
+[00004] N00568
+        R3              2       2               Passive        470
+        D1              1       ANODE           Passive        LED
+
+[00005] N00572
+        U1              5       CV              Input          NE555
+        C1              1       1               Passive        10n
+
+[00006] N00633
+        U1              2       TRG             Input          NE555
+        R2              2       2               Passive        1k
+        U2              1       1               Passive        IR SENSOR
+
+[00007] N00637
+        R1              2       2               Passive        1k
+        U2              4       4               Passive        IR SENSOR
+
+[00008] N00756
+        U1              6       THR             Input          NE555
+        U1              7       DSCHG           Passive        NE555
+        R4              2       2               Passive        100k
+        C2              1       1               Passive        100u / 16V
+
